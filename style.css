@@ -89,3 +89,13 @@ h2 {
     grid-template-rows: repeat(auto-fill, 50px);
     gap: 10px;
 }
+
+footer {
+    background-color: #761113;
+    height: 5vh;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
