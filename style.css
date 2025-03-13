@@ -9,7 +9,8 @@ body {
     display: flex;
     flex-direction:column;
     align-items: stretch;
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
     align-items: stretch;
     text-align: center;
     justify-content: center;
-    height: 90vh;
+    /* height: max(85vh,750px); */
 }
 h1 {
     font-size: 3em;
@@ -39,9 +40,16 @@ h1 {
     background-color: #003049;
     justify-content: center;
 }
-p {
+p.nav {
     font-size: 1.5em;
 }
+
+p.subtext {
+    font-size: 0.8em;
+    color: #2b2b2b;
+    font-family: Roboto mono;
+}
+
 h2 {
     padding: 20px;
     font-size: 2em;
@@ -53,41 +61,18 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* .container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    font-size:1.5em;
 }
-.upper {
-    justify-content: center;
-    font-size: inherit;
-    display: grid;
-    grid-template-columns: repeat(6,max(15vw,120px));
-    grid-template-rows: repeat(2,3em);
-    gap: 10px;
-}
-.lower {
-    font-size: inherit;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(5,max(15vw,120px));
-    grid-template-rows: 3em;
-    gap: 10px;
-} */
-
 .container {
     height: 100%;
     font-size:1em;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill,max(15vw,150px));
-    grid-template-rows: repeat(auto-fill, 50px);
+    grid-template-columns: repeat(auto-fit,max(15vw,180px));
+    grid-auto-rows: 50px;
     gap: 10px;
+    padding-bottom: 30px;
 }
 
 footer {
@@ -98,4 +83,10 @@ footer {
     justify-content: center;
     align-items: center;
     
+}
+
+#meta-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
